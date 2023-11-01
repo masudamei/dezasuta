@@ -48,6 +48,7 @@ img {
   display: flex;
   max-width: 960px;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .box1 div {
@@ -61,6 +62,7 @@ img {
   max-width: 960px;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .box2 div {
@@ -74,6 +76,7 @@ img {
   display: flex;
   max-width: 960px;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 ul {
@@ -95,17 +98,22 @@ li:not(:last-child) {
   h1,
   ul,
   li {
-    max-width: 100%;
     display: block;
     padding-bottom: 10px;
   }
 
-  .header_area_wrap {
-    margin: 0 10px;
-  }
-
   h1 {
     padding-top: 20px;
+  }
+
+  .box1,
+  .box2,
+  .header_area_wrap {
+    margin: 0 auto;
+  }
+
+  li:not(:last-child) {
+    border-right: none;
   }
 
   ul li {
