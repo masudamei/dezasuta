@@ -44,9 +44,13 @@ img {
 
 /* cssリセットここまで*/
 
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 body {
   background-color: #eeeeee;
-  width: 960px;
 }
 
 h1,
@@ -62,31 +66,28 @@ h1 {
 .service {
   display: flex;
   margin: 0 10px;
+  justify-content: space-between;
 }
 
-.service div {
-  justify-content: space-between;
+.service li {
   background-color: #ffffff;
-  margin: 0 10px;
+  width: 32%;
 }
 
 img {
   width: 100%;
 }
 
-h2,
-p {
-  margin: 10px;
-}
-
 h2 {
   border-left: 7px solid cadetblue;
   padding-left: 5px;
+  margin: 10px 10px 0 10px;
 }
 
 p {
   font-size: 17px;
   color: #333;
+  padding: 10px;
 }
 
 @media screen and (max-width: 400px) {
@@ -96,7 +97,8 @@ p {
   .service {
     display: block;
   }
-  .service div {
+  .service li {
     margin-bottom: 20px;
+    width: 100%;
   }
 }
