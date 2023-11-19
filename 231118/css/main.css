@@ -201,6 +201,10 @@ section h2 {
   width: 245px;
 }
 
+.gallery_images ul {
+  display: flex;
+}
+
 .event {
   max-width: 1000px;
   margin: 0 auto;
