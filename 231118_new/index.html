@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>デザインカフェのHP</title>
     <meta name="description" content="デザインカフェのサイトです">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -18,11 +19,21 @@
             <h1 class="header_logo"><img src="images/design_cafe_logo_header@2x.png" alt="DESIGN CAFE"></h1>
             <nav class="pc_nav">
                 <ul>
-                    <li><a href="">ABOUT US</a></li>
-                    <li><a href="">MENU</a></li>
-                    <li><a href="">GALLERY</a></li>
-                    <li><a href="">EVENT</a></li>
-                    <li><a href="">ACCESS</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#access">ACCESS</a></li>
+                </ul>
+            </nav>
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#access">ACCESS</a></li>
                 </ul>
             </nav>
         </div>
@@ -51,23 +62,23 @@
             <h2>
                 <img src="images/menu@2x.png" alt="MENU">
             </h2>
-            <div class="menu_block">
-                <div class="menu_item">
-                    <img src="images/pc_menu_drink-100.jpg" alt="drink">
+            <ul class="menu_block">
+                <li class="menu_item">
+                    <div class="menu_img"><img src="images/pc_menu_drink-100.jpg" alt="drink"></div>
                     <h3>Drink</h3>
                     <p>ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
-                </div>
-                <div class="menu_item">
-                    <img src="images/pc_menu_food-100.jpg" alt="food">
+                </li>
+                <li class="menu_item">
+                    <div class="menu_img"><img src="images/pc_menu_food-100.jpg" alt="food"></div>
                     <h3>Food</h3>
                     <p>フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
-                </div>
-                <div class="menu_item">
-                    <img src="images/pc_menu_sweets-100.jpg" alt="sweets">
+                </li>
+                <li class="menu_item">
+                    <div class="menu_img"><img src="images/pc_menu_sweets-100.jpg" alt="sweets"></div>
                     <h3>Sweets</h3>
                     <p>スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
-                </div>
-            </div>
+                </li>
+            </ul>
         </section>
 
         <section id="gallery" class="gallery">
@@ -93,13 +104,13 @@
             <div class="event_block">
                 <ul>
                     <li>
-                        <time>2020.06.23</time><a href="">7月はイベント出店のため0/0お休みします</a>
+                        <time datetime="2020-06-23">2020.06.23</time><a href="">7月はイベント出店のため0/0お休みします</a>
                     </li>
                     <li>
-                        <time>2020.03.15</time><a href="">春の新商品新発売。話題のあのブランドとコラボ</a>
+                        <time datetime="2020-03-15">2020.03.15</time><a href="">春の新商品新発売。話題のあのブランドとコラボ</a>
                     </li>
                     <li>
-                        <time>2020.02.06</time><a href="">コーヒーの日で30％OFFイベントを開催［3日間限定］</a>
+                        <time datetime="2020-02-06">2020.02.06</time><a href="">コーヒーの日で30％OFFイベントを開催［3日間限定］</a>
                     </li>
                 </ul>
             </div>
@@ -130,7 +141,7 @@
             </p>
         </div>
         <div class="footer_copy">
-            <small>© 2021 DESIGN CAFE</small>
+            <p>© 2021 DESIGN CAFE</p>
         </div>
     </footer>
 
@@ -139,6 +150,18 @@
             <img src="images/to_top@2x.png" alt="PAGE TOP">
         </a>
     </div>
+
+    <script>
+        $(function () {
+            //ここの中に記述
+            $('.sp_btn,.sp_nav li').on('click', function () {
+                // ここにクリックした時の挙動を記述
+                $(".sp_nav").fadeToggle();
+                $('.sp_btn').toggleClass('open')
+            });
+        });
+    </script>
+
 </body>
 
 </html>
