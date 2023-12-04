@@ -394,9 +394,8 @@ footer {
     padding: 20px;
     color: #fff;
     font-size: 18px;
-    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
-      "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
-      "ＭＳ 明朝", serif;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+      "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
   }
 
   /* lead */
@@ -416,20 +415,23 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+  .header_logo {
+    width: 187px;
+  }
   /* lead */
 
   .lead {
     text-align: center;
-    padding: 100px 0;
+    padding: 48px 0 56px;
   }
 
   .lead p:first-child {
     font-size: 17px;
-    margin-bottom: 48px;
+    margin-bottom: 22px;
   }
 
   .lead p:nth-child(2) {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     font-size: 38px;
     line-height: 1.15;
     letter-spacing: 0.02em;
@@ -449,7 +451,8 @@ footer {
 
   .about {
     display: block;
-    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .about_img {
@@ -458,46 +461,49 @@ footer {
 
   .about_img_sp {
     display: block;
+  }
+
+  .about_img_sp img {
     width: 100%;
   }
 
-  .about {
-    margin: 0 auto;
+  .about_text {
+    width: 100%;
   }
 
   .about_text h2 {
     width: 160px;
-    margin: 0 auto;
+    margin: 0 auto 15px;
   }
 
   .about_catch {
     font-size: 36px;
-    margin-bottom: 27px;
+    margin-bottom: 20px;
     line-height: 1.25;
+    padding: 25px 20px 0;
   }
 
   .about_desc {
     font-size: 16px;
     line-height: 1.75;
+    padding: 0 20px;
+    text-align: justify;
   }
 
   /* menu */
   .menu {
-    margin: 100px auto 0;
-    padding: 0 25px;
+    padding: 40px 38px 0;
+    margin: 0 auto;
   }
 
   .menu h2 {
     width: 87px;
-    margin: 0 auto 48px;
-  }
-
-  .menu_img {
-    max-width: 100%;
+    margin: 0 auto 15px;
   }
 
   .menu_img img {
     border-top-right-radius: 41px;
+    width: 100%;
   }
   .menu_block {
     display: block;
@@ -509,43 +515,57 @@ footer {
     margin-top: -10px;
     margin-left: 13px;
     font-weight: normal;
+    margin-bottom: 10px;
+  }
+
+  .menu_item {
+    width: 100%;
+    margin-bottom: 60px;
   }
 
   .menu_item p {
-    margin-top: 17px;
     line-height: 1.58;
     font-size: 17px;
+    margin-top: 0;
   }
   /* gallery */
 
   .gallery {
-    margin: 100px auto 0;
+    margin: 90px auto 0;
   }
   .gallery h2 {
     width: 142px;
-    margin: 0 auto 25px;
+    margin: 0 auto 20px;
   }
 
-  .gallery_images ul li {
+  .gallery_images ul li.sp {
     display: none;
+  }
+
+  .gallery_images ul {
+    display: block;
+  }
+
+  .gallery_images ul li img {
+    width: 100%;
   }
 
   /* event */
 
   .event {
     max-width: 1000px;
-    margin: 68px auto 0;
+    margin: 40px auto 0;
     padding: 0 25px;
   }
 
   .event h2 {
     width: 100px;
-    margin: 0 auto 39px;
+    margin: 0 auto 15px;
   }
 
   .event_block {
     display: block;
-    padding: 36px;
+    padding: 20px 28px;
     border: 3px solid #4f260b;
     background: #fff;
   }
@@ -566,7 +586,7 @@ footer {
   }
 
   .event_block ul li + li {
-    margin-top: 20px;
+    margin-top: 26px;
   }
 
   .event_block ul li a {
@@ -576,7 +596,7 @@ footer {
   /* access */
   .access h2 {
     width: 124px;
-    margin: 80px auto 47px;
+    margin: 40px auto 15px;
   }
 
   .access_map iframe {
@@ -587,18 +607,18 @@ footer {
 
   /* footer */
   footer {
-    margin: 76px 22px;
+    margin: 40px 20px 32px;
   }
 
   .footer_block {
     display: block;
     max-width: 100%;
-    margin: 0 auto 70px;
+    margin: 0 auto 30px;
   }
 
   .footer_img {
     width: 226px;
-    margin-right: 60px;
+    margin-bottom: 20px;
   }
   .footer_block p {
     color: #000;
@@ -616,8 +636,8 @@ footer {
 
   .pagetop {
     position: fixed;
-    right: 40px;
-    bottom: 40px;
+    right: 20px;
+    bottom: 20px;
     width: 100px;
   }
 
