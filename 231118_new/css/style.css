@@ -645,3 +645,36 @@ footer {
     width: 100%;
   }
 }
+
+.header_slider .slick-dots {
+  bottom: 20px;
+}
+.header_slider .slick-dots li button:before,
+.header_slider .slick-dots li.slick-active button:before {
+  color: #fff;
+  font-size: 14px;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+.header_slider .slick-slide img {
+  width: 100%;
+}
+.gallery_images .slick_prev {
+  left: 25px;
+  z-index: 1;
+}
+.gallery_images .slick_next::before {
+  content: "";
+
+  width: 16px;
+  height: 16px;
+  display: block;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+}
+
+.gallery_images .slick_next {
+  right: 25px;
+}
