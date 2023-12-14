@@ -646,10 +646,10 @@ footer {
   }
 
   .gallery_images .slick-next {
-    right: 25px;
+    right: 25px !important;
   }
   .gallery_images .slick-prev {
-    left: 25px;
+    left: 25px !important;
   }
 
   .gallery_images .slick-next::before {
@@ -671,6 +671,9 @@ footer {
     border-top: 2px solid #fff;
     border-right: 2px solid #fff;
     transform: rotate(225deg);
+  }
+  .slick-slide img {
+    width: 100%;
   }
 }
 
