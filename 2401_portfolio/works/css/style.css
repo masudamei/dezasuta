@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.work_wrap {
+  display: flex;
+}
+
+.work_images {
+  width: 50%;
+}
+
+.works_sp {
+  display: none;
+}
+
+.work_bana {
+  display: flex;
+}
+
+.work_img {
+  width: 72vw;
+}
+.work_pc {
+  width: 72vw;
+}
+
+.work_wrap02 {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.work_top {
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .works_pc {
+    display: none;
+  }
+  .works_sp {
+    display: block;
+  }
+}

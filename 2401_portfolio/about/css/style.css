@@ -1,0 +1,57 @@
+@charset "utf-8";
+h1 {
+  text-align: center;
+}
+.lead {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.1em;
+}
+
+.about {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.about_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_img {
+  width: 246px;
+}
+.about_text h2 {
+  width: 272px;
+  margin: 63px 0 45px;
+}
+
+.about_catch {
+  font-size: 44px;
+  margin-bottom: 27px;
+  line-height: 1.38;
+}
+
+.about_text {
+  width: 41%;
+}
+
+.about_desc {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about_img_sp {
+  display: none;
+}
+
+.about_btn {
+  border: 2px solid #553b2a;
+  width: 228px;
+  height: 43px;
+  text-align: center;
+  line-height: 43px;
+  align-items: flex-end;
+  margin: 0 0 0 auto;
+}
