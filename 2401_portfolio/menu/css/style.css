@@ -1,4 +1,69 @@
 @charset "utf-8";
-.menu_wrap {
-  display: flex;
+.menu_top_img {
+  width: 15%;
+  margin: 0 auto 20px;
+}
+h2 {
+  position: relative;
+}
+h2::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  width: 133px;
+  height: 2px;
+  background-color: #553b2a;
+  margin-right: 30px;
+}
+
+h2::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  width: 133px;
+  height: 2px;
+  background-color: #553b2a;
+  margin-left: 30px;
+}
+
+h3 {
+  font-size: 24px;
+  text-align: center;
+  margin: 90px auto 40px;
+}
+.menu_img {
+  width: 20%;
+  margin: 0 auto;
+}
+.menu_desc {
+  width: 50%;
+  margin: 30px auto;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.1em;
+}
+.menu_desc p {
+  margin: 30px auto 0;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.1em;
+  padding-bottom: 30px;
+}
+.desc01 {
+  border-bottom: 2px solid #553b2a;
+}
+.price01 {
+  width: 436px;
+  height: 303px;
+  margin: 0 auto;
+  background-color: #def1fc;
+}
+.price02 {
+  width: 400px;
+}
+.price03 {
+  width: 400px;
+}
+.contact_img {
+  margin-top: 150px;
 }

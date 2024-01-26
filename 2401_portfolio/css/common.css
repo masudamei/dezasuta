@@ -70,12 +70,11 @@ h2 {
   padding: 10px 7% 0 3%;
   width: 100%;
   box-sizing: border-box;
-  height: 171px;
-  background-color: #fef0e8;
+  height: 130px;
 }
 
 .header_logo {
-  width: 226px;
+  width: 130px;
 }
 
 .header_img {
@@ -93,6 +92,7 @@ h2 {
   text-align: center;
   font-weight: bold;
   font-size: 18px;
+  font-family: "Sorts Mill Goudy", serif;
 }
 
 /* footer */
@@ -103,8 +103,8 @@ h2 {
   padding: 10px 7% 0 3%;
   width: 100%;
   box-sizing: border-box;
-  height: 171px;
-  background-color: #fef0e8;
+  height: 140px;
+  background-image: url(../images/footer.jpg);
 }
 
 .footer_img {
@@ -123,9 +123,26 @@ h2 {
   font-weight: bold;
   font-size: 18px;
 }
+.footer_nav ul li {
+  width: 105px;
+  margin-left: 55px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
 
 h2 {
   text-align: center;
+}
+
+/* contact */
+.contact {
+  margin-top: -150px;
+}
+.contact_img {
+  margin: 0 auto;
+  width: 40%;
 }
 
 /* レスポンシブ */

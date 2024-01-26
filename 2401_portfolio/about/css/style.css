@@ -4,8 +4,10 @@ h1 {
 }
 .lead {
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 1.8;
   letter-spacing: 0.1em;
+  margin: 40px auto 150px;
+  width: 850px;
 }
 
 .about {
@@ -13,14 +15,28 @@ h1 {
   margin: 0 auto;
   padding: 0 25px;
 }
-
+.about_top_img {
+  width: 15%;
+  margin: 0 auto 20px;
+}
 .about_wrapper {
   display: flex;
   justify-content: space-between;
 }
-
+.about h2 {
+  font-size: 20px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  text-align: left;
+  border-bottom: 2px solid #553b2a;
+  margin-bottom: 40px;
+}
 .about_img {
   width: 246px;
+}
+.about_design {
+  width: 840px;
+  margin: 0 auto;
 }
 .about_text h2 {
   width: 272px;
@@ -34,12 +50,16 @@ h1 {
 }
 
 .about_text {
-  width: 41%;
+  width: 60%;
 }
 
 .about_desc {
   font-size: 16px;
   line-height: 1.6;
+}
+.about_name {
+  text-align: right;
+  margin-top: 25px;
 }
 
 .about_img_sp {
@@ -54,4 +74,7 @@ h1 {
   line-height: 43px;
   align-items: flex-end;
   margin: 0 0 0 auto;
+}
+main {
+  margin-bottom: 200px;
 }
