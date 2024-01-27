@@ -103,7 +103,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 7% 0 3%;
+  padding: 10px 7% 0 7%;
   width: 100%;
   box-sizing: border-box;
   height: 140px;
@@ -150,7 +150,8 @@ h2 {
 
 /* レスポンシブ */
 .sp_btn,
-.sp_nav {
+.sp_nav,
+.footer_sp_nav {
   display: none;
 }
 @media screen and (max-width: 1100px) {
@@ -159,6 +160,9 @@ h2 {
   }
   .pc_nav {
     display: none;
+  }
+  .footer_nav {
+    display: block;
   }
 
   /* ハンバーガー */
@@ -177,7 +181,7 @@ h2 {
     position: relative;
     top: 10px;
     display: block;
-    height: 3px;
+    height: 2px;
     border-radius: 2px;
     width: 33px;
     background-color: #553b2a;
@@ -189,7 +193,7 @@ h2 {
     position: absolute;
     content: "";
     display: block;
-    height: 3px;
+    height: 2px;
     border-radius: 2px;
     width: 33px;
     background-color: #553b2a;
@@ -237,8 +241,7 @@ h2 {
     padding: 20px;
     color: #553b2a;
     font-size: 18px;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
-      "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    font-family: "Sorts Mill Goudy", serif;
   }
 }
 
@@ -252,6 +255,7 @@ h2 {
 
   .header_wrap {
     height: 75px;
+    padding: 0 7% 0 3%;
   }
   .header_logo {
     width: 80px;
@@ -267,15 +271,35 @@ h2 {
 
   /* footer */
 
+  .footer_nav {
+    display: none;
+  }
+
   .footer_block {
     display: block;
-    max-width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .footer_sp_nav {
+    display: block;
+  }
+  .footer_sp_nav ul li {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.72;
+    width: 105px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Sorts Mill Goudy", serif;
+    margin: 0 auto 10px;
   }
 
   .footer_img {
-    width: 75%;
+    width: 35%;
     margin-bottom: 20px;
   }
+
   .footer_block p {
     color: #553b2a;
     font-size: 18px;
