@@ -41,8 +41,11 @@
                 </ul>
             </nav>
         </div>
-        <div class="header_img">
+        <div class="header_img_pc">
             <img src="images/main.jpg" alt="看板">
+        </div>
+        <div class="header_img_sp">
+            <img src="images/main_sp.jpg" alt="看板">
         </div>
         <div class="scroll_img"><img src="images/scroll.png" alt=""></div>
 
@@ -71,7 +74,9 @@
 
                     <div class="about_img_sp"><img src="images/rum-02.png" alt="XYZの画像"></div>
                     <p class="about_desc">
-                        「X、Y、Z」は3つのアルファベットから名づけられているように、3種類のドリンクから作るカクテルです。無機質なようで、どこか都会的な名前は、X、Y、Zがアルファベットの最後の3文字であることから「これ以上のものはない」つまり「XYZこそ究極のカクテル」などといわれています。デザインは、情報を求めている人やトレンドによって変わっていく物ですが、XYZDesignではその時その時のBestなデザインをクリエイティブ致します。
+                        「X、Y、Z」は3つのアルファベットから名づけられているように、3種類のドリンクから作るカクテルです。<br
+                            class="pc-only" /><br>無機質なようで、どこか都会的な名前は、X、Y、Zがアルファベットの最後の3文字であることから「これ以上のものはない」つまり「XYZこそ究極のカクテル」などといわれています。<br
+                            class="pc-only" /><br>デザインは、情報を求めている人やトレンドによって変わっていく物ですが、XYZDesignではその時その時のBestなデザインをクリエイティブ致します。
                     </p>
                     <a href="./about/index.html">
                         <div class="about_btn">more...</div>
@@ -122,7 +127,7 @@
             <h2>
                 Works
             </h2>
-            <ul class="works_images">
+            <ul class="works_images works_pc">
                 <li>
                     <a href="./works/works3.html">
                         <img src="images/03_2.png" alt="works"></a>
@@ -143,22 +148,40 @@
                     <a href="./works/works5.html">
                         <img src="images/05_2.png" alt="works"></a>
                 </li>
-                <!-- <div>
-                    <a href="images/pc_gallary_01-100.jpg" data-lightbox="image-1">
-                        <img src="images/pc_gallary_01-100.jpg" alt="カフェラテ"></a>
-                </div> -->
+
             </ul>
-            <!-- <ul>
-                    <li><img src="images/pc_gallary_01-100.jpg" alt="カフェラテ"></li>
-                    <li class="sp"><img src="images/pc_gallary_02-100.jpg" alt="看板"></li>
-                    <li class="sp"><img src="images/pc_gallary_03-100.jpg" alt="店内写真"></li>
-                    <li class="sp"><img src="images/pc_gallary_04-100.jpg" alt="コーヒー豆"></li>
-                    <li class="sp"><img src="images/pc_gallary_05-100.jpg" alt="店内写真"></li>
-                </ul> -->
+
+            <div class="works_images_sp works_sp">
+                <div>
+                    <a href="./works/works3.html" data-lightbox="image-1">
+                        <img src="images/03_2.png" alt="works3"></a>
+                </div>
+                <div>
+                    <a href="./works/works2.html" data-lightbox="image-1">
+                        <img src="images/02_2.png" alt="works2"></a>
+                </div>
+                <div>
+                    <a href="./works/works1.html" data-lightbox="image-1">
+                        <img src="images/01_2.png" alt="works1"></a>
+                </div>
+                <div>
+                    <a href="./works/works4.html" data-lightbox="image-1">
+                        <img src="images/04_2.png" alt="works4"></a>
+                </div>
+                <div>
+                    <a href="./works/works5.html" data-lightbox="image-1">
+                        <img src="images/05_2.png" alt="works5"></a>
+                </div>
+                <div>
+                    <a href="./works/works3.html" data-lightbox="image-1">
+                        <img src="images/03_2.png" alt="works1"></a>
+                </div>
+            </div>
             <a href="./works/index.html">
                 <div class="works_btn">View more...</div>
             </a>
         </section>
+
         <div class="glass_right">
             <div class="water05 img"><img src="images/glass02.png" alt=""></div>
         </div>
@@ -197,7 +220,33 @@
 
     </footer>
 
+    <script>
+        $(function () {
+            //ここの中に記述
+            $('.sp_btn,.sp_nav li').on('click', function () {
+                // ここにクリックした時の挙動を記述
+                $(".sp_nav").fadeToggle();
+                $('.sp_btn').toggleClass('open')
+            });
 
+            $('.works_images_sp').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: false,
+                arrows: true,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }]
+            });
+        });
+    </script>
+    <script src="./js/lightbox.js"></script>
 
 </body>
 
