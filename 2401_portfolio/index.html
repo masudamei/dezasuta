@@ -41,11 +41,13 @@
                 </ul>
             </nav>
         </div>
-        <div class="header_img_pc">
-            <img src="images/main.jpg" alt="看板">
+        <div class="fv color-in header_img_pc">
+            <img class="fv_img01" src="images/main.jpg">
+            <img class="fv_img02" src="images/main_after.jpg">
         </div>
-        <div class="header_img_sp">
-            <img src="images/main_sp.jpg" alt="看板">
+        <div class="fv color-in header_img_sp">
+            <img class="fv_img01" src="images/main_sp.jpg">
+            <img class="fv_img02" src="images/main_sp_after.jpg">
         </div>
         <div class="scroll_img"><img src="images/scroll.png" alt=""></div>
 
@@ -243,6 +245,33 @@
                         slidesToScroll: 1,
                     }
                 }]
+            });
+            jQuery(function ($) {
+                var fadeIn = $('.color-in');
+                $(window).on('scroll', function () {
+                    $(fadeIn).each(function () {
+                        var offset = $(this).offset().top;
+                        var scroll = $(window).scrollTop();
+                        var windowHeight = $(window).height();
+                        if (scroll > offset - windowHeight + 500) {
+                            $(this).addClass("color-show");
+                        }
+                    });
+                });
+            });
+
+            jQuery(function ($) {
+                var fadeIn = $('.fade-in');
+                $(window).on('scroll', function () {
+                    $(fadeIn).each(function () {
+                        var offset = $(this).offset().top;
+                        var scroll = $(window).scrollTop();
+                        var windowHeight = $(window).height();
+                        if (scroll > offset - windowHeight + 150) {
+                            $(this).addClass("scroll-in");
+                        }
+                    });
+                });
             });
         });
     </script>

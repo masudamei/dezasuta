@@ -1,4 +1,22 @@
 @charset "utf-8";
+.scroll-in {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.fv {
+  position: relative;
+}
+.fv_img02 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 1s;
+}
+.color-in.color-show .fv_img02 {
+  opacity: 1;
+}
 
 .scroll_img {
   text-align: center;
