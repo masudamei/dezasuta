@@ -91,8 +91,8 @@
     </main>
     <footer>
         <div class="footer_block">
-            <div class="footer_img">
-                <a href="../index.html"><img src="../images/footer_logo.png" alt="XYZ design"></a>
+            <div class="footer_img"><a href="./index.html">
+                    <img src="../images/footer_logo.png" alt="XYZ design"></a>
             </div>
             <nav class="pc_nav footer_nav">
                 <ul>
@@ -102,8 +102,8 @@
                     <li><a href="../contact/index.html">Contact</a></li>
                 </ul>
             </nav>
-            <div class="sp_btn"><span></span></div>
-            <nav class="sp_nav">
+            <!-- <div class="sp_btn"><span></span></div> -->
+            <nav class="footer_sp_nav">
                 <ul>
                     <li><a href="../about/index.html">About</a></li>
                     <li><a href="../menu/index.html">Menu</a></li>
@@ -112,7 +112,37 @@
                 </ul>
             </nav>
         </div>
+
     </footer>
+
+    <script>
+        $(function () {
+            //ここの中に記述
+            $('.sp_btn,.sp_nav li').on('click', function () {
+                // ここにクリックした時の挙動を記述
+                $(".sp_nav").fadeToggle();
+                $('.sp_btn').toggleClass('open')
+            });
+
+            $('.works_images_sp').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: false,
+                arrows: true,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }]
+            });
+        });
+    </script>
+    <script src="./js/lightbox.js"></script>
+
 </body>
 
 </html>

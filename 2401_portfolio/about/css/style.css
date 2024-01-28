@@ -28,7 +28,7 @@ h1 {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
     "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
   text-align: left;
-  border-bottom: 2px solid #553b2a;
+  border-bottom: 1px solid #553b2a;
   margin-bottom: 40px;
 }
 .about_img {
@@ -37,6 +37,10 @@ h1 {
 .about_design {
   width: 840px;
   margin: 0 auto;
+}
+.about_design h2 {
+  display: inline-block;
+  padding: 0 20px 5px;
 }
 .about_text h2 {
   width: 272px;
@@ -98,7 +102,7 @@ main {
     margin: 30px auto 40px;
   }
   .about h2 {
-    font-size: 4vw;
+    font-size: 3.8vw;
   }
   main {
     margin-bottom: 0;
@@ -127,6 +131,7 @@ main {
     align-items: flex-end;
     margin-bottom: 0;
     line-height: inherit;
+    padding: 0 10px 5px;
   }
   .about_img {
     width: 30%;

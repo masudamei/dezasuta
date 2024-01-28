@@ -13,7 +13,8 @@ h2::before {
   width: 133px;
   height: 2px;
   background-color: #553b2a;
-  margin-right: 30px;
+  left: calc(50% - 80px);
+  transform: translateX(-100%);
 }
 
 h2::after {
@@ -23,7 +24,7 @@ h2::after {
   width: 133px;
   height: 2px;
   background-color: #553b2a;
-  margin-left: 30px;
+  left: calc(50% + 80px);
 }
 
 h3 {
@@ -58,11 +59,35 @@ h3 {
   margin: 0 auto;
   background-color: #def1fc;
 }
-.price02 {
-  width: 400px;
-}
+
 .price03 {
-  width: 400px;
+  max-width: 436px;
+}
+.price_list {
+  background: #def1fc;
+  max-width: 436px;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+dl {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+dl::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 99%;
+  height: 1px;
+  border-top: 3px dotted #553b2a;
+}
+dt,
+dd {
+  position: relative;
+  padding: 10px;
+  background: #def1fc;
 }
 .contact_img {
   margin-top: 150px;
@@ -81,6 +106,26 @@ h3 {
     letter-spacing: 0.1em;
     line-height: 2.5em;
     margin: 30px auto 80px;
+  }
+  h2::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    width: 80px;
+    height: 1px;
+    background-color: #553b2a;
+    left: calc(50% - 50px);
+    transform: translateX(-100%);
+  }
+
+  h2::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    width: 80px;
+    height: 1px;
+    background-color: #553b2a;
+    left: calc(50% + 50px);
   }
   h3 {
     font-size: 4vw;
