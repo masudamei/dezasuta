@@ -19,7 +19,7 @@
 
 <body>
     <header id="header">
-        <div class="header_wrap">
+        <div class="header_wrap is-top">
             <a href="./index.html">
                 <h1 class="header_logo"><img src="images/logo_header.png" alt="DESIGN CAFE"></h1>
             </a>
@@ -225,6 +225,19 @@
     <script>
         $(function () {
             //ここの中に記述
+            $(window).on("scroll", function () {
+                if ($(this).scrollTop() > 200) {
+                    // スクロールしたら
+                    $(".header_wrap").removeClass("is-top");
+                } else {
+                    // ページトップに来たら
+                    $(".header_wrap").addClass("is-top");
+                }
+            });
+
+
+
+
             $('.sp_btn,.sp_nav li').on('click', function () {
                 // ここにクリックした時の挙動を記述
                 $(".sp_nav").fadeToggle();

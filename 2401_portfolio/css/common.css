@@ -58,14 +58,21 @@ h2 {
   font-size: 36px;
   font-family: "Sorts Mill Goudy", serif;
 }
-body {
+main {
   overflow-x: hidden;
 }
 /* ressここまで */
 
 /* ヘッダー */
-
+#header {
+  position: relative;
+  padding-top: 100px;
+}
 .header_wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -73,8 +80,13 @@ body {
   width: 100%;
   box-sizing: border-box;
   height: 130px;
+  transition: 0.3s;
+  backdrop-filter: blur(6px);
 }
 
+.header_wrap.is-top {
+  transform: translateY(-100%);
+}
 .header_logo {
   width: 130px;
 }
@@ -157,9 +169,14 @@ h2 {
   display: none;
 }
 @media screen and (max-width: 1100px) {
+  #header {
+    position: relative;
+    padding-top: 75px;
+  }
   .header_wrap {
     height: 100px;
   }
+
   .pc_nav {
     display: none;
   }
