@@ -63,6 +63,34 @@ main {
 }
 /* ressここまで */
 
+/* 汎用 */
+
+.fade-in {
+  opacity: 0;
+  transition-duration: 1000ms;
+  transition-property: opacity, transform;
+}
+
+.fade-in-up {
+  transform: translate(0, 50px);
+}
+
+.fade-in-down {
+  transform: translate(0, -50px);
+}
+
+.fade-in-left {
+  transform: translate(-50px, 0);
+}
+
+.fade-in-right {
+  transform: translate(50px, 0);
+}
+.scroll-in {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 /* ヘッダー */
 #header {
   position: relative;
@@ -151,6 +179,10 @@ main {
 
 h2 {
   text-align: center;
+}
+
+main {
+  margin-top: 30px;
 }
 
 /* contact */

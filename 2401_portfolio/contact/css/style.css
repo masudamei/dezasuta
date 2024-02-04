@@ -33,7 +33,9 @@ textarea {
   width: 100%;
 }
 input {
-  height: 40px;
+  padding: 10px 20px;
+  margin-top: 14px;
+  box-sizing: border-box;
 }
 .btn {
   display: flex;

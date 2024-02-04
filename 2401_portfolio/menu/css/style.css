@@ -165,6 +165,12 @@ dd {
     letter-spacing: 0.1em;
     line-height: 2.5em;
   }
+  .price_list {
+    background: #def1fc;
+    max-width: 436px;
+    margin: 0 auto;
+    padding: 20px 20px;
+  }
   .contact_img {
     margin-top: 0;
   }
